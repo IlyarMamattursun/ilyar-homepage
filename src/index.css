@@ -155,6 +155,9 @@ body { overflow-x: hidden; }
   background: #0a0b12;
   font-family: var(--font-sans);
 }
+.dark-map-tiles {
+  filter: invert(90%) hue-rotate(180deg) brightness(0.7) saturate(0.5);
+}
 .journey-map-container .leaflet-control-zoom a {
   background: rgba(18,20,30,0.9) !important;
   color: #ccc !important;
