@@ -107,8 +107,9 @@ export const places = [
     name: "喀什",
     nameEn: "Kashgar",
     period: "2003 - 2015",
-    color: "#d2991d",
+    color: "#f5a623",
     emoji: "🏔️",
+    coords: [39.47, 75.99],
     description:
       "中国最西部的城市，我出生的地方。丝绸之路的十字路口，维吾尔文化的重镇。12岁之前，这里是全世界。12岁之后，这里成了回不去的故乡。",
     image: "/pic/新疆草原.png",
@@ -121,8 +122,9 @@ export const places = [
     period: "2015 - 2018",
     color: "#f0883e",
     emoji: "🏫",
+    coords: [43.82, 87.61],
     description:
-      "12岁，坐72小时绿皮火车，第一次离开家。乌鲁木齐58中，内初班。全寄宿制，一年回一次家。在这里学会了独立——或者说是被迫学会了独立。",
+      "12岁，坐72小时绿皮火车，第一次离开家。乌鲁木齐58中，内初班。在这里学会了独立——或者说是被迫学会了独立。",
     image: "/pic/小时候在乌鲁木齐的照片.jpg",
     keywords: ["内初班", "58中", "第一次离家", "独立"],
   },
@@ -131,8 +133,9 @@ export const places = [
     name: "上海",
     nameEn: "Shanghai",
     period: "2018 - 2022",
-    color: "#58a6ff",
+    color: "#4dabf7",
     emoji: "🌆",
+    coords: [31.62, 121.40],
     description:
       "崇明中学，内高班。一百来个从新疆来的孩子，全封闭式管理，两周出一次校门。白天黑夜一起待着，在宿舍阳台和浴室里偷偷喝酒——那是我至今最快乐的时光。\n\n整个高中被疫情笼罩，2022年3月封到年底。高考延后，回家又遇新疆封控，错过大学第一学期。\n\n在这里打了两年网球。",
     image: "/pic/崇明中学.jpg",
@@ -157,8 +160,9 @@ export const places = [
     name: "南京",
     nameEn: "Nanjing",
     period: "2022 - 2026",
-    color: "#a371f7",
+    color: "#a78bfa",
     emoji: "🎓",
+    coords: [32.06, 118.79],
     description:
       "南京大学，信息管理与信息系统。成绩靠前，获得保研资格但主动放弃——选择了直接就业。\n\n实习：同花顺，数据分析师。\n毕业后：满帮集团 AI 算法部门，数据分析工程师。",
     image: "/pic/南京大学.png",
