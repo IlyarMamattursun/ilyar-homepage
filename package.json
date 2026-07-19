@@ -11,10 +11,8 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
-    "leaflet": "^1.9.4",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "react-leaflet": "^5.0.0"
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
