@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { places, interests, ctf, covidStory, photos, contactLinks } from "../data/content";
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 function JourneyMap() {
   const [activePlace, setActivePlace] = useState(null);
   const sectionRef = useRef(null);
@@ -158,10 +160,10 @@ function InterestCard({ title, emoji, story, images, playlistUrl, playlistName, 
 
       {images && images.length > 0 && (
         <div className="flex gap-2 mb-4">
-          {images.map((img, i) => (
+          {images.map((src, i) => (
             <img
               key={i}
-              src={img}
+              src={asset(src)}
               alt={`${title} ${i + 1}`}
               className="w-20 h-20 object-cover rounded border border-border-subtle gallery-img"
               loading="lazy"
@@ -210,7 +212,7 @@ function PhotoGallery() {
             }`}
           >
             <img
-              src={photo.src}
+              src={asset(photo.src)}
               alt={photo.alt}
               className="w-full h-full object-cover gallery-img"
               style={{ minHeight: i === 0 ? 300 : 160 }}
@@ -277,7 +279,7 @@ function StoryCards() {
         <div className="bg-bg-card border border-border-subtle rounded-lg overflow-hidden hover:border-border-muted transition-all">
           {covidStory.image && (
             <img
-              src={covidStory.image}
+              src={asset(covidStory.image)}
               alt={covidStory.title}
               className="w-full h-48 object-cover"
               loading="lazy"
@@ -297,7 +299,7 @@ function StoryCards() {
         <div className="bg-bg-card border border-border-subtle rounded-lg overflow-hidden hover:border-border-muted transition-all">
           {ctf.image && (
             <img
-              src={ctf.image}
+              src={asset(ctf.image)}
               alt={ctf.title}
               className="w-full h-48 object-cover"
               loading="lazy"
@@ -319,7 +321,7 @@ function StoryCards() {
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2">
             <img
-              src="./pic/回新疆飞机天山景色.jpg"
+              src={asset("/pic/回新疆飞机天山景色.jpg")}
               alt="天山"
               className="w-full h-48 md:h-full object-cover"
               loading="lazy"
